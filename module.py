@@ -8,7 +8,7 @@ def openv(file1:str):
     print(sonastik)
     return sonastik
 
-def lisa(file1:dict):
+def lisa(file1:str):
     file=open(file1,"r", encoding='utf-8-sig')
     for line in file:
         k, v=line.strip().split('-')
@@ -20,7 +20,7 @@ def lisa(file1:dict):
     print(sonastik)
     return sonastik
 
-def näita(fail:dict):   #poisk
+def näita(fail:str):   #poisk
     file=open(fail,'r',encoding="utf-8-sig")
     for line in file:
         k, v=line.strip().split('-')
@@ -47,7 +47,7 @@ def näita(fail:dict):   #poisk
             print(Riigid[num1],OtsimeP)
     return sonastik
 
-def game(fail:dict): #game
+def game(fail:str): #game
     a=[]
     võit=kaotus=0
     test=[]
@@ -91,7 +91,7 @@ def game(fail:dict): #game
         a.append(num)
     return sonastik
 
-def paranda(fail: dict): #izmenit
+def paranda(fail: str): #izmenit
     file=open(fail,'r',encoding="utf-8-sig")
     for line in file:
         k, v = line.strip().split('-')
